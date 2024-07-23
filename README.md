@@ -8,6 +8,12 @@ This project showcases a custom overlay map for the Kenton neighborhood in Portl
 - Real-time geolocation tracking to display the user's current location with a custom marker.
 - Responsive map design for full-screen view.
 
+## Example Overlay
+![Kenton Map](images/Overlay_Example.png "View of Kenton with old neighborhood event map overlain")
+
+
+
+
 ## Prerequisites
 
 Before you start, ensure you have the following installed:
