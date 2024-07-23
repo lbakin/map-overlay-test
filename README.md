@@ -9,7 +9,7 @@ This project showcases a custom overlay map for the Kenton neighborhood in Portl
 - Responsive map design for full-screen view.
 
 ## Example Overlay
-![Kenton Map](images/Overlay_Example.png "View of Kenton with old neighborhood event map overlain")
+![Kenton Map](/public/images/Overlay_Example.png "View of Kenton with old neighborhood event map overlain")
 
 
 
