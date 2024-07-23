@@ -1,3 +1,29 @@
+# Kenton Neighborhood Custom Map
+
+This project showcases a custom overlay map for the Kenton neighborhood in Portland using React and Leaflet. It features real-time user location tracking and an overlay image representing specific features of the neighborhood.
+
+## Features
+
+- Custom overlay of the Kenton neighborhood map.
+- Real-time geolocation tracking to display the user's current location with a custom marker.
+- Responsive map design for full-screen view.
+
+## Prerequisites
+
+Before you start, ensure you have the following installed:
+- Node.js (v12.0.0 or higher recommended)
+- npm (comes with Node.js)
+
+## Installation
+
+To get the project up and running on your local machine, follow these steps:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/lbakin/map-overlay-test
+   cd path-to-your-project
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
