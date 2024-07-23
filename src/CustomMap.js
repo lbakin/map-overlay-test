@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap, ImageOverlay } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -27,13 +27,17 @@ const CustomMap = () => {
   }, []);
 
   const LocationMarker = () => {
+    const mapRef = useRef(null);
     const map = useMap();
-
+    mapRef.current = map;
+    
     useEffect(() => {
       if (userLocation) {
-        map.flyTo(userLocation, map.getZoom());
+        mapRef.current.flyTo(userLocation, mapRef.current.getZoom());
       }
-    }, [userLocation, map]);
+      //eslint-disable-next-line
+    }, [userLocation]);  
+    
 
     return userLocation === null ? null : (
       <Marker position={userLocation} icon={customIcon}>
