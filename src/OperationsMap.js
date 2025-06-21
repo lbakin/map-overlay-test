@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap, ImageOverlay } from 're
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import UserLocation from './UserLocation';
-
+import overlayImages from './overlayImages';
 
 const OperationsMap = () => {
 
@@ -15,10 +15,14 @@ const OperationsMap = () => {
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <ImageOverlay
-        url="images/Oregon_Country_Fair_Main_1.jpg"
-        bounds={operationsBounds}
-      />
+      {overlayImages.map((overlay, index) => (
+  <ImageOverlay
+    key={index}
+    url={overlay.url}
+    bounds={overlay.bounds}
+    opacity={overlay.opacity}
+  />
+))}
       <UserLocation />
     </MapContainer>
   );
