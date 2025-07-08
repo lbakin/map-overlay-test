@@ -12,7 +12,7 @@ const customIcon = L.icon({
 });
 
 const UserLocation = () => {
-  const [userLocation, setUserLocation] = useState([44.05578432806585, -123.38670893629666]);
+  const [userLocation, setUserLocation] = useState(null);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
